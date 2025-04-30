@@ -8,7 +8,7 @@ $users = array(
 ); 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
+    $username = $_POST['admin'];
     $password = $_POST['password'];
 
     if (array_key_exists($username, $users) && $users[$username] === $password) {
